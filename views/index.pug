@@ -3,7 +3,24 @@ extends components/layout.pug
 block styles
 
 block content
-    h3.center Hello
+    section.section
+        .container
+            .parallax-container
+                .parallax
+                    img(src="/images/office.jpg")
+
+    section.section
+        .container
+            h3.light.center Precaution
+            
+            .row
+                .col.s12.m4
+                    .card-panel.hoverable
+                .col.s12.m4
+                    .card-panel.hoverable
+                .col.s12.m4
+                    .card-panel.hoverable
+
 
 block scripts
     
