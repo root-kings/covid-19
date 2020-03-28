@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.parallax-container{
+    height: 100vh;
+}
+
+.tenor{
+    font-family: 'Tenor Sans', sans-serif !important;
+}
+
+.mont{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rubik{
+    font-family: 'Quicksand', sans-serif;
+}

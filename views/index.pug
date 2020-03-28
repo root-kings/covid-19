@@ -1,26 +1,69 @@
 extends components/layout.pug
 
 block styles
-
+    link(rel="stylesheet", href="/css/index.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap")
 block content
-    section.section
-        .container
-            .parallax-container
-                .parallax
-                    img(src="/images/office.jpg")
+    section.section(style="padding-top:0px")
+        .parallax-container
+            //- .container
+            .row
+                .col.s12.m6
+                    .center
+                        h1.strong.mont(style="color:#50C878")
+                            |   COVID-19
+                .col.s12.m6
+            .parallax
+                img(src="/images/back.png")
 
     section.section
         .container
-            h3.light.center Precaution
+            h1.strong.center.mont(style="letter-spacing:20px;padding:20px 0px 20px 0px;margin-bottom:42px;color:#3051BC")
+                | PRECAUTION
             
-            .row
-                .col.s12.m4
-                    .card-panel.hoverable
-                .col.s12.m4
-                    .card-panel.hoverable
-                .col.s12.m4
-                    .card-panel.hoverable
-    
+        .row
+            .col.s12.m3
+                .container
+                    .center
+                        img.circle.reponsive-img(src="/images/handwash.jpg", alt="", width="100%")
+                        br
+                        h3.rubik.strong(style="font-size:25px;font-weight:400;margin-top:15%")
+                            |   Wash hands
+                            br
+                            | properly
+                //- .card-panel.hoverable
+            .col.s12.m3
+                .container
+                    .center
+                        img.circle.responsive-img(src="/images/cough.jpg", alt="" width="100%")
+                        br
+                        h3.rubik.strong(style="font-size:25px;font-weight:400;margin-top:15%")
+                            |   Cover while
+                            br
+                            | Coughing
+                //- .card-panel.hoverable
+            .col.s12.m3
+                .container
+                    .center
+                        img.circle.reponsive-img(src="/images/face.jpg" width="100%")
+                        br
+                        h3.rubik.strong(style="font-size:25px;font-weight:400;margin-top:15%")
+                            |   Avoid Touching  
+                            br
+                            | face
+                //- .card-panel.hoverable
+            .col.s12.m3
+                .container
+                    .center
+                        img.circle.responsive-img(src="/images/dist.jpg", alt="" width="100%")
+                        br
+                        h3.rubik.strong(style="font-size:25px;font-weight:400;margin-top:15%")
+                            |   Maintaining proper
+                            br
+                            | distance
+
+                //- .card-panel.hoverable
     section.section
         .container
             h3.light.center Helpline
